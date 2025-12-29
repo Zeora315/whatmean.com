@@ -25,9 +25,9 @@
               <button class="btn btn-outline-light btn-lg me-3 explore-btn" @click="exploreEntries">
                 浏览全部词条
               </button>
-              <button class="btn btn-outline-light btn-lg submit-btn">
+              <a href="https://github.com/Nico6719/whatmean.com" target="_blank" class="btn btn-outline-light btn-lg submit-btn">
                 提交新词条
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -65,6 +65,7 @@ export default {
 
 .hero-section {
   height: 100vh;
+  min-height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
               url('/background.png') center/cover no-repeat;
   position: relative;
@@ -184,7 +185,8 @@ export default {
 /* 响应式调整 */
 @media (max-width: 768px) {
   .hero-section {
-    height: 70vh;
+    height: 100vh;
+    min-height: 500px;
   }
   
   .display-2 {
