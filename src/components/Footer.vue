@@ -48,7 +48,7 @@
       <div class="row align-items-center">
         <div class="col-12 text-center">
           <p class="mb-0 text-white-50">
-            &copy; 2025 何意味.com. 保留所有权利. 
+            &copy; 2025 - 2026 何意味.com. 保留所有权利. 
             <span class="mx-2">|</span>
             <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" class="text-decoration-none text-white-50">
               闽ICP备2025115232号-2
