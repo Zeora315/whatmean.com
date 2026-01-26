@@ -106,10 +106,11 @@ export const entriesApi = {
     try {
       // 先在静态数据中搜索
       if (staticEntries.length > 0) {
+        const lowerQuery = query.toLowerCase();
         return staticEntries.filter(entry => 
-          entry.name.includes(query) || 
-          entry.explanation.includes(query) ||
-          (entry.detail && entry.detail.includes(query))
+          (entry.name && entry.name.toLowerCase().includes(lowerQuery)) || 
+          (entry.explanation && entry.explanation.toLowerCase().includes(lowerQuery)) ||
+          (entry.detail && entry.detail.toLowerCase().includes(lowerQuery))
         );
       }
       

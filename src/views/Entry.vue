@@ -100,8 +100,11 @@
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import entriesApi from '../services/api';
 import MorphModal from '../components/MorphModal.vue';
+
+const route = useRoute();
 
 // 状态管理
 const entries = ref([]);
@@ -158,7 +161,12 @@ const handleSearch = async () => {
 
 // 组件挂载时获取数据
 onMounted(() => {
-  fetchEntries();
+  if (route.query.q) {
+    searchQuery.value = route.query.q;
+    handleSearch();
+  } else {
+    fetchEntries();
+  }
 });
 </script>
 
