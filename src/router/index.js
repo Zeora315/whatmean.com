@@ -3,6 +3,7 @@ import Index from '../views/Index.vue'
 import Entry from '../views/Entry.vue'
 import About from '../views/About.vue'
 import Friends from '../views/Friends.vue'
+import EntryGenerator from '../views/EntryGenerator.vue'
 
 const routes = [
   {
@@ -14,6 +15,11 @@ const routes = [
     path: '/entries',
     name: 'Entry',
     component: Entry
+  },
+  {
+    path: '/entry-generator',
+    name: 'EntryGenerator',
+    component: EntryGenerator
   },
   {
     path: '/about',
